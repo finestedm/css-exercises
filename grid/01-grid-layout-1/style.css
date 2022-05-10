@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   height: 100%;
   margin: 0;
 }
@@ -44,4 +45,32 @@ body, html {
 
 .footer {
   background-color: #393f4d;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 150px 150px 1fr 150px;
+  gap: 20px;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+.nav {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.footer {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 3;
+
 }
